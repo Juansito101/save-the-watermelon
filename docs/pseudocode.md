@@ -57,17 +57,17 @@ ELSE
                 DISPLAY "correct guess"
                 ADD guess to guessed_letters
 
-                FOR each position in word
+FOR each position in word
                     IF letter matches guess
                         REVEAL letter in word_completion
-                END FOR
+END FOR
 
-                IF no "_" left in word_completion
+IF no "_" left in word_completion
                     SET guessed = true
                 END IF
             END IF
 
-        ELSE IF guess length equals word length AND alphabetic
+ELSE IF guess length equals word length AND alphabetic
             IF guess already in guessed_words
                 DISPLAY "already guessed word"
 
