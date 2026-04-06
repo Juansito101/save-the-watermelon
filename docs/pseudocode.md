@@ -96,12 +96,10 @@ FUNCTION play(word)
         DISPLAY "You lose" and show correct word
 END FUNCTION
 
-
 FUNCTION display_watermelon(tries)
     STORE list of watermelon stages (5 drawings)
     RETURN stage based on tries index
 END FUNCTION
-
 
 FUNCTION main
     CALL get_word → word
