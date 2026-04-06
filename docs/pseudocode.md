@@ -71,28 +71,28 @@ ELSE IF guess length equals word length AND alphabetic
             IF guess already in guessed_words
                 DISPLAY "already guessed word"
 
-            ELSE IF guess is not equal to word
+ELSE IF guess is not equal to word
                 DISPLAY "wrong word"
                 DECREASE tries by 1
                 ADD guess to guessed_words
 
-            ELSE
+ELSE
                 SET guessed = true
                 SET word_completion = word
             END IF
 
-        ELSE
+ELSE
             DISPLAY "invalid guess"
         END IF
 
         DISPLAY watermelon drawing
         DISPLAY word_completion
 
-    END WHILE
+END WHILE
 
-    IF guessed is true
+IF guessed is true
         DISPLAY "You win"
-    ELSE
+ELSE
         DISPLAY "You lose" and show correct word
 END FUNCTION
 
