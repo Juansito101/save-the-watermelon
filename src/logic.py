@@ -19,11 +19,6 @@ Stores and supplies possible words
 Keeps data separate from game logic
 
 
-
-
--------------------------------------------------------------
-
-
 1. get_word()
 
 Responsibility:
@@ -98,15 +93,4 @@ Calls play()
 Handles replay loop
 
 
-Type of role:
-Program entry controller
 
-Responsibility Flow
-main()
-  ↓
-get_word()
-  ↓
-play(word)
-  ├── mask_word()
-  ├── display_watermelon()
-  └── (game loop + user interaction)
