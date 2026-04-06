@@ -39,21 +39,21 @@ DISPLAY "Let's save the watermelon!"
 DISPLAY watermelon drawing based on tries
 DISPLAY word_completion
 
-    WHILE guessed is false AND tries > 0
+WHILE guessed is false AND tries > 0
 
-        ASK user to guess a letter or word
-        CONVERT guess to uppercase
+ASK user to guess a letter or word
+CONVERT guess to uppercase
 
-        IF guess is one letter AND alphabetic
+IF guess is one letter AND alphabetic
             IF guess already in guessed_letters
                 DISPLAY "already guessed"
             
-            ELSE IF guess not in word
+ELSE IF guess not in word
                 DISPLAY "not in word"
                 DECREASE tries by 1
                 ADD guess to guessed_letters
             
-            ELSE
+ELSE
                 DISPLAY "correct guess"
                 ADD guess to guessed_letters
 
