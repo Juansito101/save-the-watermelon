@@ -15,14 +15,14 @@ FUNCTION mask_word(word, reveal_count)
     GET unique letters from word
     RANDOMLY choose reveal_count letters from unique letters
 
-    SET masked_word = empty string
+SET masked_word = empty string
 
-    FOR each letter in word
-        IF letter is in chosen letters
+ FOR each letter in word
+    IF letter is in chosen letters
             ADD letter to masked_word
-        ELSE
+    ELSE
             ADD "_" to masked_word
-    END FOR
+END FOR
 
     RETURN masked_word
 END FUNCTION
@@ -85,8 +85,8 @@ ELSE
             DISPLAY "invalid guess"
         END IF
 
-        DISPLAY watermelon drawing
-        DISPLAY word_completion
+ DISPLAY watermelon drawing
+ DISPLAY word_completion
 
 END WHILE
 
