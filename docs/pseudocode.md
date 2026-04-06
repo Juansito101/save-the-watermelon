@@ -12,8 +12,8 @@ END FUNCTION
 FUNCTION mask_word(word, reveal_count)
     CONVERT word to uppercase
 
-    GET unique letters from word
-    RANDOMLY choose reveal_count letters from unique letters
+GET unique letters from word
+RANDOMLY choose reveal_count letters from unique letters
 
 SET masked_word = empty string
 
@@ -24,7 +24,7 @@ SET masked_word = empty string
             ADD "_" to masked_word
 END FOR
 
-    RETURN masked_word
+RETURN masked_word
 END FUNCTION
 
 
