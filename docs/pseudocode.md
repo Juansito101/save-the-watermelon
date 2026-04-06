@@ -105,7 +105,7 @@ FUNCTION main
     CALL get_word → word
     CALL play(word)
 
-    WHILE user wants to play again
+ WHILE user wants to play again
         CALL get_word → word
         CALL play(word)
     END WHILE
