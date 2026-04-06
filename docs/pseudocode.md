@@ -35,9 +35,9 @@ FUNCTION play(word)
     SET guessed_words = empty list
     SET tries = 4
 
-    DISPLAY "Let's save the watermelon!"
-    DISPLAY watermelon drawing based on tries
-    DISPLAY word_completion
+DISPLAY "Let's save the watermelon!"
+DISPLAY watermelon drawing based on tries
+DISPLAY word_completion
 
     WHILE guessed is false AND tries > 0
 
